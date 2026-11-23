@@ -1,0 +1,21 @@
+layouts:
+  default:
+    cards:
+    - card-id: 0
+      VGA-1:
+        state: enabled
+        mode: 1280x1024@75.0
+        position: [10, 20]
+        orientation: left
+        scale: 1.5
+        group: 1
+        custom: hi
+      HDMI-A-1:
+        state: disabled
+  side_by_side:
+    cards:
+    - VGA-1:
+        position: [0, 0]
+      HDMI-A-1:
+        position: [648, 0]
+        mode: 648x480

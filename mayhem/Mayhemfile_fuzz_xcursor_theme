@@ -1,0 +1,11 @@
+project: savantenvs/mir
+target: fuzz-xcursor-theme
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-xcursor-theme/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_xcursor_theme
+    libfuzzer: true
+    timeout: 5

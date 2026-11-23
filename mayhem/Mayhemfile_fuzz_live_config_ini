@@ -1,0 +1,11 @@
+project: savantenvs/mir
+target: fuzz-live-config-ini
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-live-config-ini/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_live_config_ini
+    libfuzzer: true
+    timeout: 5

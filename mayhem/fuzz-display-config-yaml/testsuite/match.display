@@ -1,0 +1,12 @@
+layouts:
+  default:
+    displays:
+    - match:
+        vendor: VSC
+        model: ANX7530 U
+      orientation: inverted
+      scale: 2
+    - match:
+        port: VGA-1
+      state: disabled
+    extra: {a: 1}

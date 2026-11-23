@@ -1,0 +1,11 @@
+project: savantenvs/mir
+target: fuzz-display-config-yaml
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-display-config-yaml/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_display_config_yaml
+    libfuzzer: true
+    timeout: 5
